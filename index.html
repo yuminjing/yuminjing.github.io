@@ -86,13 +86,18 @@
                 align-items: center;
                 /* 添加鼠标悬停时的样式 */
                 transition: background-color 0.3s ease;
+                border-radius: 10px; /* 设置圆角半径，根据需要调整 */
+                border: 1px solid transparent; /* 将边框设置为透明 */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* 使阴影初始状态为透明 */
             }
             .item:hover {
-                 background-color: #f0f0f0; /* 设置悬停时的背景颜色，你可以根据需要调整 */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 在悬停时显示阴影 */
+                background-color: #fffffff3; /* 设置悬停时的背景颜色，你可以根据需要调整 */
             }
         
             .pic {
                 margin-right: 50px; /* Optional: Adjust the margin as needed */
+                margin-left: 30px;
             }
         
             .pic img {
